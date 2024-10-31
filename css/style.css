@@ -3,7 +3,7 @@
 
 :root {
     --accent-color: grey;
-    --base-color: transparent;
+    --base-color: rgba(0,0,0,0.4);
     --text-color: white;
     --input-color: black;
 }
@@ -26,19 +26,19 @@ body {
     background-size: cover;
     background-position: right;
     overflow: hidden;
+}
 
-    .wrapper {
-        box-sizing: border-box;
-        background-color: var(--base-color);
-        height: 100vh;
-        width: max(40%, 600px);
-        padding: 10px;
-        border-radius: 0 20px 20px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.wrapper {
+    box-sizing: border-box;
+    background-color: var(--base-color);
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    /* border-radius: 0 20px 20px 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -90,6 +90,7 @@ form input {
     border-left: none;
     background-color: var(--input-color);
     transition: 150ms ease;
+    color: white;
 }
 
 form input:hover {
@@ -103,6 +104,7 @@ form input:focus {
 
 div:has(input:focus)>label {
     background-color: var(--text-color);
+    color: black;
 }
 
 form input::placeholder {
@@ -134,7 +136,7 @@ form button:focus {
 
 a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: white;
 }
 
 a:hover {
